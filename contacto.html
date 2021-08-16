@@ -25,6 +25,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">  
+    
     <title>Contacto | Ahecal - Soluciones en climatización</title>
 </head>
 <!-- Comienzo NavBar -->
@@ -59,7 +60,7 @@
 <body>
 <!-- Inicio Info Empresa -->
     <main>
-        <div class="row justify-content-start">
+        <div class="row justify-content-center">
             <h1 class="titulos col-md-3">Contactanos</h1>
         </div>
         <div class="row justify-content-around">
@@ -83,24 +84,24 @@
                     <p class="parrafos">ahecal@ssdnet.com.ar</p>
                 </div>
                 <div class="locationMap">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.0148198619972!2d-58.54250388505318!3d-34.57849156367027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb77728faf6c5%3A0xa2cd442464383434!2sHECAL%20S.R%20L!5e0!3m2!1ses-419!2sar!4v1623279862267!5m2!1ses-419!2sar" width="500" height="350" style="border:0;" allowfullscreen="" loading="lazy" title="locationMap"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.0148198619972!2d-58.54250388505318!3d-34.57849156367027!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb77728faf6c5%3A0xa2cd442464383434!2sHECAL%20S.R%20L!5e0!3m2!1ses-419!2sar!4v1623279862267!5m2!1ses-419!2sar" style="border:0" allowfullscreen="" loading="lazy" title="locationMap"></iframe>
                 </div>
             </div>
     <!-- Fin Info Empresa -->
     <!-- Inicio formulario contacto -->
-            <form class="contactForm col-md-5" action="enviar.php" method="POST" enctype="multipart/form-data">
+            <form class="contactForm col-md-5" action="index.php" method="POST" enctype="multipart/form-data">
                 <h2 class="subtitulos">Envía tu consulta</h2>
-                <hr class="shadow">
+                <hr class="divisor slide-in-right">
                 <fieldset class="contactForm__fieldset shadow parrafos">
-                        <label for="nombreyapellido">Nombre y apellido (requerido)</label>
-                        <input type="text" name="nombreyapellido" maxlength="100" class="contactForm__fieldset__input">
-                        <label for="correo">Correo electrónico (requerido)</label>
-                        <input type="text" name="correo" maxlength="100" class="contactForm__fieldset__input">
+                        <label for="nombre">Nombre y apellido (requerido)</label>
+                        <input type="text" name="nombre" maxlength="100" class="contactForm__fieldset__input">
+                        <label for="email">Correo electrónico (requerido)</label>
+                        <input type="text" name="email" maxlength="100" class="contactForm__fieldset__input">
                         <p>Motivo de consulta</p>
                             <select name="consulta" class="contactForm__fieldset__selectOption parrafos">
-                                <option value="Proyecto residencial">Proyecto residencial</option>
-                                <option value="Proyecto comercial">Proyecto comercial</option>
-                                <option value="Instalacion y mentenimiento">Instalación y mantenimiento</option>
+                                <option value="proyecto residencial">Proyecto residencial</option>
+                                <option value="proyecto comercial">Proyecto comercial</option>
+                                <option value="instalacion y mantenimiento">Instalación y mantenimiento</option>
                                 <option value="Otros">Otros</option>
                             </select>
                         <label for="asunto">Asunto</label>
