@@ -1,0 +1,59 @@
+.container-library{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    box-sizing: border-box;
+    height: 70vh;
+    position: relative;
+}
+.overlay {
+    filter: opacity(.6);
+    background-color: #0e0f0f;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    &:hover {
+        opacity: 0;
+        transition: .5s ease-in-out;
+    }
+}
+.overlay-text {
+    color: $colour-4;
+    font-size: $font-lg*1.2;
+    font-family: $font-text;
+    text-align: center;
+    /* margin-top: 50%; */
+    text-transform: uppercase;
+    margin: 1.8em 0 1em 0;
+    padding: 0.3em;
+    background-color: $colour-1;
+    border-radius: 30px;
+}
+.box {
+    flex: 1;
+    overflow: hidden;
+    margin: 2%;
+    transition: .5s;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+    >img {
+        width: 200%;
+        height: 100%;
+        object-fit: cover; 
+        transition: .5s;
+    }
+    &:hover {
+        flex: 1 1 50%;
+        > img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+/* Fin Página Proyectos */
+  

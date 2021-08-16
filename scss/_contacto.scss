@@ -1,0 +1,118 @@
+/* Inicio Página Contacto */
+.divisor {
+    height: 5px;
+    background-color: $colour-5;
+    width: 100%;
+    border-radius: 50px;
+}
+.slide-in-left {
+	-webkit-animation: slide-in-left 1s ease-in;
+	animation: slide-in-left 1s ease-in;
+}
+@-webkit-keyframes slide-in-left {
+    0% {
+        -webkit-transform: translateX(-1000px);
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+@keyframes slide-in-left {
+    0% {
+        -webkit-transform: translateX(-1000px);
+        transform: translateX(-1000px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+  
+
+/*Inicio Info Empresa*/
+.infoEmpresa {
+    margin: auto;
+    h3 {
+        padding: 0;
+    }
+    p {
+        text-align: left;
+        display: block;
+        margin: 0;
+    }
+    i {
+        color: $colour-1;
+        font-size: $font-lg;
+        padding-right: 0.6em;
+        display: inline-flex;
+        margin-bottom: 1em; 
+    }
+}  
+.locationMap {
+    padding-top: 2%;
+    justify-content: stretch;
+}
+/*Fin Info Empresa*/
+/*Inicio contact form*/
+.contactForm {
+    margin: 1%;
+    h3 {
+        padding: 0;
+        margin-top: 1em;
+    }
+   
+}
+.contactForm__fieldset {
+    display: inline-block;
+    padding: 4%;
+    border-radius: 20px;
+    background-color: $colour-3;
+    border-color: transparent;
+    text-align: left;   
+}
+.contactForm__fieldset__input {
+    width: 90%;
+    height: 3%;
+    padding: 2%;
+    margin: 2% 0 2% 0;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: $colour-4;
+    text-align: left;
+}
+textarea {
+    height: 100px !important;
+}
+.contactForm__fieldset__selectOption {
+    width: 95%;
+    height: 3%;
+    padding: 2%;
+    margin: 2% 0 2% 0;
+    border-radius: 10px;
+    border-color: transparent;
+    background-color: $colour-4;
+    text-align: left;
+}
+.contactForm__fieldset__buttons {
+    height: 3em;
+    width: 6em;
+    border-radius: 25px;
+    font-family: $font-text;
+    font-weight: bold;
+    font-size: 1.2;
+    border-color: transparent;
+    background-color: $colour-4;
+    &:hover {
+        color: $colour-5;
+        box-shadow:  11px 11px 22px #8c908c, -11px -11px 22px #bec2be;  
+        @include animation-button;
+    }
+}
+  /*Fin contact form*/
+  /* Fin Página Contacto */ 

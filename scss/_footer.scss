@@ -1,0 +1,19 @@
+/* Inicio footer */
+.footer {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to left, $colour-2, $colour-3);
+    p {
+        font-family: $font-text;
+        color: $colour-1;
+        font-style: italic;
+        font-size: $font-sm;
+        margin: 0;
+        padding: 1em 0 1em 0;
+        span {
+            font-style: normal;
+        }
+    }
+}
+
+/* Fin footer */

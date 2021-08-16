@@ -1,0 +1,27 @@
+
+/* Color Theme Swatches in HSLA */
+$colour-1: hsl(216, 16%, 23%);
+$colour-2: hsl(120, 2%, 65%);
+$colour-3: hsl(120, 9%, 89%);
+$colour-4: hsl(329, 100%, 99%);
+$colour-5: hsl(0, 84%, 44%);
+
+/* Fonts */
+$font-subtitles: 'comfortaa', cursive;
+$font-text: 'roboto Condensed', sans-serif;
+$font-lg: 1.2em;
+$font-md: 1.1em;
+$font-sm: 1em;
+
+/* Styles */
+$button-radius: 40px;
+
+/* Mixins */
+@mixin animation-button {
+    transform: scale(1.1);
+    transition: all 100ms ease;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+}

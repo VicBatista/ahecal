@@ -1,0 +1,83 @@
+.row {
+    margin: 0;
+}
+.carouselIndex { 
+    img {
+        height: 400px;
+        width: 400px;
+      }
+}
+.carousel-indicators li {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: $colour-5;
+}
+.colour-strong {
+    color: $colour-5;
+}
+.titulos {
+    color: $colour-1;
+    font-size: $font-lg *1.2;
+    font-family: $font-subtitles;
+    text-align: center;
+    padding: 2em 0 0 0;
+}
+.subtitulos {
+    font-family: $font-subtitles;
+    font-size: $font-md;
+    color: $colour-5;
+    padding: 1em;
+}
+.parrafos {
+    font-family: $font-text;
+    color: $colour-1;
+    font-size: $font-sm;
+    font-weight: 500;
+    text-align: center;
+    margin: 1.5em;
+}
+$carousel-maxHeight: 500px;
+
+.carousel-inner {
+    height: $carousel-maxHeight;   
+    @media (max-width: 992px){
+        height: $carousel-maxHeight - 100px;   
+    }
+    @media (max-width: 768px){
+        height: $carousel-maxHeight - 200px;
+    }
+    @media (max-width: 576px){
+        height: $carousel-maxHeight - 300px;
+    }
+}
+.card-deck {
+    margin: 0;
+}
+.card {
+    margin: 30px 20px 30px 20px !important;
+    a {
+        display: flex;
+        justify-content: center;
+    }
+}
+@mixin cards-display {
+    justify-items: center;
+    background-color: $colour-4;
+}
+.minisplitsIndex {
+    @include cards-display;
+}
+.imgEquipos {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 1em;
+}
+.cassettesIndex {
+    @include cards-display;
+}
+.rooftopsIndex {
+    @include cards-display;
+}
+/* Fin Main Index */

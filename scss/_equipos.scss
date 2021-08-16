@@ -1,0 +1,63 @@
+/* Inicio Página Equipos */
+body {
+    background-color: $colour-4;
+}
+.banner {
+    position: relative;
+    h1 {
+        position: absolute;
+        top: 30%;
+        text-align: center;
+        font-family: $font-text;
+        color: $colour-5;
+        font-size: $font-lg*1.2;
+    }
+    img {
+        opacity: 0.3;
+        z-index: -1;
+    }
+}
+.cards {
+      background-color: $colour-4;
+      border-radius: 10px;
+      margin: 3em 2em 3em 2em;
+      img {
+          display: flex;
+          justify-self: center;
+          align-self: center;
+          height: 300px;
+          width: 300px;
+          margin: auto;
+          margin-top: 1em;
+      }
+}
+.btn-modal {
+    display: flex;
+    color: $colour-4;
+    background-color: $colour-1;
+    font-family: $font-text;
+    font-size: $font-sm;
+    margin: auto;
+    margin-bottom: 1em;
+    &:hover {
+        color: $colour-4;
+        background-color: $colour-2;
+    }
+}
+.modal-title {
+    color: $colour-5;
+    font-family: $font-subtitles;
+}
+.subtitulos2 {
+    font-family: $font-text;
+    text-transform: uppercase;
+    color: $colour-1;
+    font-size: $font-lg;
+    display: grid;
+    justify-content: space-around;
+}
+.list li {
+    list-style-type: disc;
+    text-align: left;
+    padding: 5px;
+}
